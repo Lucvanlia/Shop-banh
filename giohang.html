@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Giỏ hàng</title>
+</head>
+<body>
+        <h1 class="text-center">Giỏ hàng</h1>
+        <div class="row">
+            <div class="col col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                        </tr>
+                    </thead>
+                    <tbody id="datarow">
+                        <tr>
+                            <td>1</td>
+                            <td>Cup-cake Socola</td>
+                            <td class="text-right"><input type="number" name="" id="" max="20" min="1"></td>
+                            <td class="text-center ">59.000 VNĐ</td>
+                            <td>
+                                <!-- Nút xóa, bấm vào sẽ xóa thông tin -->
+                                <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                                    <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Cup-cake trà xanh</td>
+                                <td class="text-right"><input type="number" name="" id="" max="20" min="1"></td>
+                                <td class="text-center ">59.000 VNĐ</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin -->
+                                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Cup-cake dâu tây</td>
+                                <td class="text-right"><input type="number" name="" id="" max="20" min="1"></td>
+                                <td class="text-center ">59.000 VNĐ</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin -->
+                                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Cup-cake việt quất</td>
+                                <td class="text-right"><input type="number" name="" id="" max="20" min="1"></td>
+                                <td class="text-center ">59.000 VNĐ</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin -->
+                                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        </tr>
+                        
+                        <tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Bánh dừa</td>
+                                <td class="text-right"><input type="number" name="" id="" max="20" min="1"></td>
+                                <td class="text-center ">59.000 VNĐ</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin -->
+                                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Bánh tart</td>
+                                <td class="text-right"><input type="number" name="" id="" max="20" min="1"></td>
+                                <td class="text-center ">59.000 VNĐ</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin -->
+                                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="doan.html" class="btn btn-warning btn-md"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Quay về trang chủ</a>
+                <a href="thanhtoan.html" class="btn btn-primary btn-md"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Xóa sản phẩm -->
+    <script>
+        var remove_cart = document.getElementsByClassName("btn-danger");
+        for (var i = 0; i < remove_cart.length; i++) 
+        {
+            var button = remove_cart[i]
+            button.addEventListener("click", function () 
+            {
+                var button_remove = event.target
+                button_remove.parentElement.parentElement.remove()
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/*Footer*/
+.footer{
+    background-color: #F0FFF0;
+}
+.footer a{
+    text-decoration: none;
+    color: #000;
+}
+.footer .footer-body{
+    margin-top: 25px;
+}
+.footer .footer-body p i{
+    font-size: 20px;
+    margin-right: 15px;
+}
+.footer .footer-body p a i:hover{
+    color: brown;
+}
+.footer .footer-body #message{
+    width: 385px;
+    margin-top: 5px;
+}
+.footer .footer-body p .btn{
+    border: 2px solid;
+    margin-left: 55%;
+}
+.footer .footer-body p .btn:hover{
+    color: #fff;
+}
+.footer .icon{
+    font-size: 30px;
+    margin-top: 50px;
+}
+.footer .icon a{
+    color: rgb(0, 0, 0);
+}
+.footer .icon a:hover{
+    color: burlywood;
+}
+.footer .copyright{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.footer .copyright a:hover{
+    color: brown;
+}

@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body style="background-color:#F4c5c9 ">
+    <div class="nen">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form action="">
+        <h3 class="animate__animated animate__bounceInRight">Thanh Toán</h3>
+        <div class="khuon1">
+            <label for="txtSTK">Số tài khoản </label>
+            <input type="tel" id="user" placeholder="Nhập số tài khoản   " required  id="txtSTK" pattern="[0-9]{10}" " maxlength="12" title="Vui lòng nhập đúng kí tự để được thanh toán ">>
+        <div class="body2">    
+            <label for="user">Vui lòng chọn hình thức thanh toán  </label>
+            <div class="hinhthuc " id="logo1">
+                <label for="">TP Bank</label>
+                     <input type="radio" style="margin-left: 199px;" name="rdGender">
+            </div>
+                <div class="hinhthuc" id="logo2">
+                    <label for="">Mastercard</label>
+                        <input type="radio" style="margin-left: 181px;" name="rdGender" checked >
+                </div>
+                <div class="hinhthuc " id="logo3">
+                    <label for="">Vietcombank</label>
+                        <input type="radio" style="margin-left: 170px;" name="rdGender">
+                </div>
+            </div>
+            </div>
+    <div class="xacnhan">
+        <input type="checkbox" name="" id="tich" >
+        <label for="tich">Tôi chắc chắn điều trên là đúng </label> 
+    </div>
+        <a href="dangnhap.html" style="text-decoration: none;"><button onclick="document.getElementById('spnWin').innerText='*Cảm ơn quý khách đã thanh toán thành công '" type="submit">Thanh Toán </button></td>
+</a>
+      <span id="spnWin" ></span>
+      <span class="material-symbols-outlined" style="color: #be535d;">
+        arrow_right_alt
+        </span>
+      <span class="material-symbols-outlined" >
+            <a href="doan.html" class="animate__animated animate__bounceInRight  backto">Quay về trang chủ</a>
+        </span>
+
+    </div>
+    </form>
+</body>
+</html>
